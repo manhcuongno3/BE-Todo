@@ -1,15 +1,15 @@
-function handlePing(req, res) {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.write('pong');
-  res.end();
+function handlePing(request, response) {
+  response.statusCode = 200;
+  response.setHeader('Content-Type', 'text/plain');
+  response.write('pong');
+  response.end();
 }
 
-function handleHello(req, res) {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.write('Hello World\n');
-  res.end();
+function handleHello(request, response) {
+  response.statusCode = 200;
+  response.setHeader('Content-Type', 'text/plain');
+  response.write('Hello World\n');
+  response.end();
 }
 
 module.exports = {

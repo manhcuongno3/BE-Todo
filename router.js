@@ -1,6 +1,6 @@
 const { handlePing, handleHello } = require('./controller');
 
-function router(req, res) {
+function handleRouting(req, res) {
     if (req.url === '/ping') {
         if (req.method === 'GET') {
             handlePing(req, res);
@@ -22,5 +22,5 @@ function router(req, res) {
 }
 
 module.exports = {
-    router
+    handleRouting
 }
